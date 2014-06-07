@@ -11,3 +11,7 @@
 @interface MMHypnosisViewController : UIViewController
 
 @end
+
+@interface MMHypnosisViewController() <UITextFieldDelegate>
+
+@end
