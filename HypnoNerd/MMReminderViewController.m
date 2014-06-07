@@ -20,6 +20,12 @@
 {
     NSDate *date = self.datePicker.date;
     NSLog(@"Setting a reminder for %@", date);
+
+    UILocalNotification *note = [[UILocalNotification alloc] init];
+    note.alertBody = @"Hypnosis me!";
+    note.fireDate = date;
+
+    [[UIApplication sharedApplication] scheduleLocalNotification:note];
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,6 +45,13 @@
     }
 
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    NSLog(@"MMReminderViewController loads its view");
 }
 
 @end

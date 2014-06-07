@@ -19,13 +19,8 @@
     // Override point for customization after application launch.
     MMHypnosisViewController *hvc = [[MMHypnosisViewController alloc] init];
 
-    // This will get pointer to an object that represents the app bundle
-    NSBundle *appBundle = [NSBundle mainBundle];
+    MMReminderViewController *rvc = [[MMReminderViewController alloc] init];
 
-    // Look in the appBundle for the file MMReminderViewController.xib
-    MMReminderViewController *rvc = [[MMReminderViewController alloc]
-                                     initWithNibName:@"MMReminderViewController"
-                                     bundle:appBundle];
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[hvc, rvc];
 
