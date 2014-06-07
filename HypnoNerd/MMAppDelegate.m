@@ -7,13 +7,30 @@
 //
 
 #import "MMAppDelegate.h"
+#import "MMHypnosisViewController.h"
+#import "MMReminderViewController.h"
 
 @implementation MMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     // Override point for customization after application launch.
+    MMHypnosisViewController *hvc = [[MMHypnosisViewController alloc] init];
+
+    // This will get pointer to an object that represents the app bundle
+    NSBundle *appBundle = [NSBundle mainBundle];
+
+    // Look in the appBundle for the file MMReminderViewController.xib
+    MMReminderViewController *rvc = [[MMReminderViewController alloc]
+                                     initWithNibName:@"MMReminderViewController"
+                                     bundle:appBundle];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hvc, rvc];
+
+    self.window.rootViewController = tabBarController;
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

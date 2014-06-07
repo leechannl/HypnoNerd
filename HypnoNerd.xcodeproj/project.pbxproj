@@ -19,6 +19,10 @@
 		8D5EE71C1940770C0000D2D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5EE7041940770C0000D2D6 /* UIKit.framework */; };
 		8D5EE7241940770C0000D2D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EE7221940770C0000D2D6 /* InfoPlist.strings */; };
 		8D5EE7261940770C0000D2D6 /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EE7251940770C0000D2D6 /* HypnoNerdTests.m */; };
+		8D5EE731194084BA0000D2D6 /* MMHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EE730194084BA0000D2D6 /* MMHypnosisView.m */; };
+		8D5EE7341940851F0000D2D6 /* MMHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EE7331940851F0000D2D6 /* MMHypnosisViewController.m */; };
+		8D5EE737194088940000D2D6 /* MMReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5EE736194088940000D2D6 /* MMReminderViewController.m */; };
+		8D5EE73919408A660000D2D6 /* MMReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D5EE73819408A660000D2D6 /* MMReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		8D5EE7211940770C0000D2D6 /* HypnoNerdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoNerdTests-Info.plist"; sourceTree = "<group>"; };
 		8D5EE7231940770C0000D2D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D5EE7251940770C0000D2D6 /* HypnoNerdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoNerdTests.m; sourceTree = "<group>"; };
+		8D5EE72F194084BA0000D2D6 /* MMHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHypnosisView.h; sourceTree = "<group>"; };
+		8D5EE730194084BA0000D2D6 /* MMHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHypnosisView.m; sourceTree = "<group>"; };
+		8D5EE7321940851F0000D2D6 /* MMHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHypnosisViewController.h; sourceTree = "<group>"; };
+		8D5EE7331940851F0000D2D6 /* MMHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHypnosisViewController.m; sourceTree = "<group>"; };
+		8D5EE735194088940000D2D6 /* MMReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMReminderViewController.h; sourceTree = "<group>"; };
+		8D5EE736194088940000D2D6 /* MMReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMReminderViewController.m; sourceTree = "<group>"; };
+		8D5EE73819408A660000D2D6 /* MMReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +118,15 @@
 		8D5EE7061940770C0000D2D6 /* HypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
+				8D5EE72F194084BA0000D2D6 /* MMHypnosisView.h */,
+				8D5EE730194084BA0000D2D6 /* MMHypnosisView.m */,
 				8D5EE70F1940770C0000D2D6 /* MMAppDelegate.h */,
 				8D5EE7101940770C0000D2D6 /* MMAppDelegate.m */,
+				8D5EE7321940851F0000D2D6 /* MMHypnosisViewController.h */,
+				8D5EE7331940851F0000D2D6 /* MMHypnosisViewController.m */,
+				8D5EE735194088940000D2D6 /* MMReminderViewController.h */,
+				8D5EE736194088940000D2D6 /* MMReminderViewController.m */,
+				8D5EE73819408A660000D2D6 /* MMReminderViewController.xib */,
 				8D5EE7121940770C0000D2D6 /* Images.xcassets */,
 				8D5EE7071940770C0000D2D6 /* Supporting Files */,
 			);
@@ -221,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5EE70B1940770C0000D2D6 /* InfoPlist.strings in Resources */,
+				8D5EE73919408A660000D2D6 /* MMReminderViewController.xib in Resources */,
 				8D5EE7131940770C0000D2D6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +261,9 @@
 			files = (
 				8D5EE7111940770C0000D2D6 /* MMAppDelegate.m in Sources */,
 				8D5EE70D1940770C0000D2D6 /* main.m in Sources */,
+				8D5EE731194084BA0000D2D6 /* MMHypnosisView.m in Sources */,
+				8D5EE737194088940000D2D6 /* MMReminderViewController.m in Sources */,
+				8D5EE7341940851F0000D2D6 /* MMHypnosisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
