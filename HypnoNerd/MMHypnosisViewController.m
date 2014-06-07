@@ -90,6 +90,21 @@
         messageLable.frame = frame;
 
         [self.view addSubview:messageLable];
+
+        UIInterpolatingMotionEffect *motionEffect;
+        motionEffect = [[UIInterpolatingMotionEffect alloc]
+                        initWithKeyPath:@"center.x"
+                        type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        [messageLable addMotionEffect:motionEffect];
+
+        motionEffect = [[UIInterpolatingMotionEffect alloc]
+                        initWithKeyPath:@"center.y"
+                        type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        [messageLable addMotionEffect:motionEffect];
     }
 }
 
